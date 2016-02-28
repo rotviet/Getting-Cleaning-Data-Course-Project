@@ -4,7 +4,7 @@ y_train <- read.table("./UCI HAR Dataset/train/y_train.txt")
 subject_train <- read.table("./UCI HAR Dataset/train/subject_train.txt")
 
 
-## Load activity label and features
+## Load test data and subject
 x_test <- read.table("./UCI HAR Dataset/test/X_test.txt")
 y_test <- read.table("./UCI HAR Dataset/test/y_test.txt")
 subject_test <- read.table("./UCI HAR Dataset/test/subject_test.txt")
@@ -183,7 +183,5 @@ fBodyBodyGyroMagStd fBodyBodyGyroJerkMagMean fBodyBodyGyroJerkMagStd
 6          -0.8243194               -0.9423669              -0.9326607
 
 
-
-
-
+## Write final data into viet.txt
 write.table(result, file = "C:/Users/user/Desktop/RWD/viet.txt")
